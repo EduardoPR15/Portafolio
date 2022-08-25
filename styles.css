@@ -134,6 +134,10 @@ color: var(--main1)
 .Titulo{
     text-align: center;
 }
+.cajadescripcion{
+    text-align: center;
+    word-break: break-all;
+}
 .descripcion1{
     text-align: center;
     word-break: break-all;
@@ -146,6 +150,7 @@ color: var(--main1)
     margin-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
+    word-break: break-all;
 }
 .Skills{
     width: auto;
@@ -244,8 +249,9 @@ color: var(--main1)
 }
 .exp1{
     background-color:red;
-    width: 800px;
-    height: 200px;
+    width: auto;
+    height: 100
+    px;
     margin: auto;
 
 }
@@ -375,6 +381,7 @@ left: 40px;
         grid-column-gap: 200px;
         
     }
+
     .Redes i{
         font-size: 100px;
 
@@ -450,6 +457,7 @@ left: 40px;
 .lista{
             display: none;
         }
+        
 .Skills{
                 display: flex;
                 flex-direction: column;
@@ -461,7 +469,7 @@ left: 40px;
             }
             .exp1{
                 background-color:#0F4C75;
-                width: 800px;
+                width: auto;
                 height: 200px;
                 margin: auto;
             
