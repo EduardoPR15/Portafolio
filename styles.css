@@ -254,6 +254,16 @@ color: var(--main1)
     padding: 10px;
 
 }
+
+
+.exp1{
+    background-color:red;
+    width: 800px;
+    height: 200px;
+    margin: auto;
+
+}
+
 .Proyectos{
     margin: auto;
     width: auto;
