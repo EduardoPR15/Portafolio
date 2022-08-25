@@ -52,16 +52,18 @@ body{
     text-decoration: none;
 }
 .Inicio{
+    height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: auto;
     grid-auto-flow: row;
     grid-gap: 10px;
+
     
 }
 .imagen {
     width: auto;
-    height: 100%;
+    /* height: 100%; */
     grid-row: 1/5;
 align-items: center;
 position: relative;
@@ -73,7 +75,7 @@ justify-content: center;
     justify-content: center;
     width: 250px;
     height: 250px;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 100%;
     transition: .5s;
     overflow: hidden;
@@ -125,7 +127,7 @@ justify-content: center;
     border-radius: 10px;
     background-color: #1B262C;
     color: #BBE1FA;
-    width: 500px;
+    min-width: 400px;
 }   
 .Correo i{
 font-size: 30px;
@@ -136,21 +138,27 @@ color: var(--main1)
 }
 .cajadescripcion{
     text-align: center;
-    word-break: break-all;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    word-wrap: break-all;
 }
 .descripcion1{
     text-align: center;
-    word-break: break-all;
+    word-wrap: break-all;
 }
 .Acercade{
     text-align: center;
     justify-content: center;
     width: auto;
-    height: 200px;
+    height: auto;
     margin-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
-    word-break: break-all;
+    word-wrap: break-all;
 }
 .Skills{
     width: auto;
@@ -250,8 +258,7 @@ color: var(--main1)
 .exp1{
     background-color:red;
     width: auto;
-    height: 100
-    px;
+    height: 100px;
     margin: auto;
 
 }
@@ -373,12 +380,13 @@ left: 40px;
     }
 
 .Inicio{
+        width: auto;
+        height: auto;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-auto-flow: row;
-        height:  700px;
-        grid-column-gap: 200px;
+        grid-column-gap: 50px;
         
     }
 
@@ -453,6 +461,7 @@ left: 40px;
         font-size: 24px;
 
     }
+    
     
 .lista{
             display: none;
