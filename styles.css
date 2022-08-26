@@ -273,7 +273,7 @@ justify-content: center
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: 300px;
     height: auto;
     overflow: hidden;
     margin: auto;
@@ -349,7 +349,7 @@ left: 40px;
 }
 
 
-@media (min-width: 550px) {
+@media (min-width: 652px) {
 
     body h1{
         color: #1B262C;
@@ -405,8 +405,8 @@ left: 40px;
 .barra{
         background-color: blueviolet;
         display: none;
-        width: 50px;
-        height: 50px;
+        width: auto;
+        height: 10px;
     }
     .Habilidadesbox{
         display: flex;
@@ -450,7 +450,7 @@ left: 40px;
 
 }
 
-@media (max-width:549px ) {
+@media (max-width: 650px ) {
     body h1{
         color: #1B262C;
         font-family: 'Montserrat';
