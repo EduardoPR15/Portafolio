@@ -6,16 +6,28 @@
     box-sizing: border-box;
 }
 :root{
-    --main1: #BBE1FA;
-    --color2: #3282B8;
-    --color3: #0F4C75;
-    --color4: #1B262C;
-    --navbar: #1b262cb0;;
+    --main1: #DDDDDD;
+    --main1original:#BBE1FA;
+    --color2: #EEEEEE;
+    --color3: #51C4D3;
+    --color4: #126E82;
+    --navbar: #1b262cb0;
+    --color2original: #3282B8;
+    --color3original: #0F4C75;
+    --color4original: #1B262C;
+    --navbaroriginal: #1b262cb0;
+    --background:#02081d;
 
 }
 body{
-    background-color: white;
+    background-color:var(--background);
     color: var(--color2);
+}
+body h1{
+    color: var(--color4);
+}
+body h2{
+    color: var(--color3);
 }
 .navbar{
     display: flex;
@@ -23,27 +35,36 @@ body{
     flex-wrap: wrap;
     position: fixed;
     z-index: 10000;
-    
-
 }
 
 
 .lista{
-    background-color: var(--color4);
+    font-family: 'Montserrat';
+    font-size: 18px;    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align-last: right;
+    gap: 10px;
     flex-flow: row;
     text-decoration: none;
+    word-wrap: break-word;
     
+    
+}
+.lista ul{
+    text-align: justify;
+    text-align: center;
 }
 .lista a{
     text-decoration: none;
     color: var(--main1);
+    padding: 5px;
+    background-color: var(--color4);
+    border-radius: 10px;
+    text-align: justify;
 }
 .lista a:hover  {
-    color: var(--color2);
+    color: var(--color3);
     transition: .5s;
 }
 
@@ -107,7 +128,7 @@ justify-content: center;
     padding-right: 100px;
     margin: auto;
     overflow: hidden;
-    color: #0F4C75;
+    color: var(--color3);
 }
 .bxl-linkedin{
     font-size: 50px;
@@ -253,6 +274,30 @@ margin-bottom: -50px;
     width: 120%;
     height: 120%;
 }
+.Estudios{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    word-wrap: break-word;
+    height: auto;
+    width: auto;
+    grid-gap: 30px;
+
+}
+.uni{
+    margin: auto;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+.uni img{
+    width: 100%;
+    height: 100%;
+}
 .exp1{
     background-color:red;
     width: auto;
@@ -357,13 +402,11 @@ left: 40px;
 @media (min-width: 652px) {
 
     body h1{
-        color: #1B262C;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 150px;
     }
     body h2{
-        color: var(--color3);
         font-family: 'Montserrat';
         font-style: 600;
         font-size: 50px;
@@ -386,7 +429,7 @@ left: 40px;
         grid-template-columns: 1fr 1fr ;
         grid-auto-flow: row;
         grid-column-gap: 50px;
-        
+        padding-top: 50px;
     }
 
     .Redes i{
@@ -407,12 +450,14 @@ left: 40px;
         width: 100%;
         height: 100%;
     }
-.barra{
-        background-color: blueviolet;
+    .navbar{
+    width: 100%;
+    align-items: center;   
+    }
+    .barra{
         display: none;
         width: auto;
         height: 100px;
-       
     }
     .Habilidadesbox{
         display: flex;
@@ -432,6 +477,22 @@ left: 40px;
         margin-right: 100px;
         justify-content: space-between;
     }
+    .Estudios{
+    display: grid;
+    
+    }
+    .uni{
+        grid-row: 1/4;
+    }
+    .ing{
+    grid-column: 2;
+    grid-template-rows: 1;
+
+}
+.gen{
+    grid-column: 2;
+    grid-row: 3;
+}
     .Contacto h2{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -457,8 +518,10 @@ left: 40px;
 }
 
 @media (max-width: 650px ) {
+    body{
+    background-size: auto;
+    }
     body h1{
-        color: #1B262C;
         font-family: 'Montserrat';
     font-style: bold;
     font-size: 50px;
@@ -481,10 +544,12 @@ left: 40px;
     .navbar{
         width: 100%;
         display: flex;
+        
     }
 .lista{
         display: none;
         background-color: var(--navbar);
+        border-radius: 20px;
         
 }
         .listaShow{
@@ -506,6 +571,7 @@ left: 40px;
         }
 
         .barra{
+            background-color: var(--color4);
             margin-left: 90%;
             width: 50px;
             height: 20px;
@@ -517,18 +583,18 @@ left: 40px;
                 flex-direction: column;
                 justify-content: space-between;
             }
-            .Proyectos{
+    .Proyectos{
                 display: flex;
                 flex-direction: column;
             }
-            .exp1{
+    .exp1{
                 background-color:#0F4C75;
                 width: auto;
                 height: 200px;
                 margin: auto;
             
             }
-            .foto{
+    .foto{
                 background-color: var(--color4);
                 justify-content: center;
                 width: 200px;
