@@ -10,6 +10,7 @@
     --color2: #3282B8;
     --color3: #0F4C75;
     --color4: #1B262C;
+    --navbar: #1b262cb0;;
 
 }
 body{
@@ -20,12 +21,15 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 10000;
     
 
 }
 
 
 .lista{
+    background-color: var(--color4);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,10 +40,10 @@ body{
 }
 .lista a{
     text-decoration: none;
-    color: #3282B8;
+    color: var(--main1);
 }
 .lista a:hover  {
-    color: var(--color4);
+    color: var(--color2);
     transition: .5s;
 }
 
@@ -75,7 +79,7 @@ justify-content: center;
     justify-content: center;
     width: 250px;
     height: 250px;
-    /* margin: auto; */
+    margin: auto;
     border-radius: 100%;
     transition: .5s;
     overflow: hidden;
@@ -349,6 +353,7 @@ left: 40px;
 }
 
 
+
 @media (min-width: 652px) {
 
     body h1{
@@ -406,7 +411,8 @@ left: 40px;
         background-color: blueviolet;
         display: none;
         width: auto;
-        height: 10px;
+        height: 100px;
+       
     }
     .Habilidadesbox{
         display: flex;
@@ -472,12 +478,40 @@ left: 40px;
         font-size: 24px;
 
     }
-    
-    
+    .navbar{
+        width: 100%;
+        display: flex;
+    }
 .lista{
-            display: none;
-        }
+        display: none;
+        background-color: var(--navbar);
         
+}
+        .listaShow{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            align-self: center;
+            z-index: 100;
+            width: 100%;
+        }
+        .lista a{
+            text-decoration: none;
+            color: var(--main1);
+        }
+        .lista a:hover  {
+            color: var(--main1);
+            transition: .5s;
+        }
+
+        .barra{
+            margin-left: 90%;
+            width: 50px;
+            height: 20px;
+            z-index: 200;
+            }
+
 .Skills{
                 display: flex;
                 flex-direction: column;
