@@ -1,8 +1,8 @@
 @import url('https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 :root{
@@ -27,6 +27,12 @@ body h1{
     color: var(--color4);
 }
 body h2{
+    color: var(--color3);
+}
+body p{
+    color: var(--main1);
+}
+body h3{
     color: var(--color3);
 }
 .navbar{
@@ -298,12 +304,9 @@ margin-bottom: -50px;
     width: 100%;
     height: 100%;
 }
-.exp1{
-    background-color:red;
-    width: auto;
-    height: 100px;
-    margin: auto;
 
+.Experiencia{
+    background-color: #0F4C75;
 }
 .Proyectos{
     margin: auto;
@@ -369,6 +372,14 @@ left: 40px;
     justify-content: center;
     display: flex;
     margin: auto;
+    transition: 0.8s ;
+}
+.contacto_cel:hover{
+    
+    perspective: 1000px;
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 .bx-phone, .bx-mail-send{
     color: var(--color4);
@@ -386,6 +397,13 @@ left: 40px;
     justify-content: center;
     display: flex;
     margin: auto;
+    transition: 0.8s;
+}
+.contacto_correo:hover{
+    perspective: 1000px;
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 .contacto_celtitulo,.contacto_correotitulo{
     color: #1B262C;
@@ -586,13 +604,6 @@ left: 40px;
     .Proyectos{
                 display: flex;
                 flex-direction: column;
-            }
-    .exp1{
-                background-color:#0F4C75;
-                width: auto;
-                height: 200px;
-                margin: auto;
-            
             }
     .foto{
                 background-color: var(--color4);
