@@ -137,16 +137,19 @@ body h3{
     color: var(--color3);
 }
 .bxl-linkedin{
+    color: var(--color3);
     width: 100px;
     font-size: 50px;
     
 }
 .bxl-facebook{
+    color: var(--color3);
     width: 100px;
     font-size: 50px;
 
 }
 .bxl-twitter{
+    color: var(--color3);
     width: 100px;
     font-size: 50px;
 }
@@ -563,6 +566,7 @@ left: 40px;
     .Redes{
         justify-content: center;
         height: 150px;
+        text-decoration: none;
     }
     .imagen{
         margin: auto;
