@@ -94,12 +94,11 @@ body h3{
 }
 .imagen {
     width: auto;
-    /* height: 100%; */
     grid-row: 1/5;
-align-items: center;
-position: relative;
-padding: 20px;
-justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
 }
 .foto{
     background-color: var(--color4);
@@ -128,6 +127,7 @@ justify-content: center;
     border-radius: 0%;  
 }
 .Redes{
+    height: 100px;
     display: flex;
     text-align: center;
     padding-left: 100px;
@@ -137,14 +137,17 @@ justify-content: center;
     color: var(--color3);
 }
 .bxl-linkedin{
+    width: 100px;
     font-size: 50px;
     
 }
 .bxl-facebook{
+    width: 100px;
     font-size: 50px;
 
 }
 .bxl-twitter{
+    width: 100px;
     font-size: 50px;
 }
 .bxl-linkedin:hover,.bxl-facebook:hover, .bxl-twitter:hover{
@@ -210,7 +213,7 @@ margin-bottom: -50px;
 .javascript, .css,.html,.design{
     background-color: var(--color4);
     height: auto;
-    width: 250px;
+    width: 300px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -219,7 +222,13 @@ margin-bottom: -50px;
     word-break: break-all;
     padding: 20px;
     text-align: center;
+    z-index: 4;
+    overflow: hidden;
+    text-align: justify;
 }
+
+
+
 .logojs{
     display: flex;
     justify-content: center;
@@ -306,7 +315,89 @@ margin-bottom: -50px;
 }
 
 .Experiencia{
-    background-color: #0F4C75;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.exptitulo{
+    margin: auto;
+    text-align: center;
+}
+.expBox{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.expBox i {
+color: var(--main1);
+font-size: 50px;
+}
+.expBox h3 {
+    color: var(--background);
+
+}
+.uvg,.tec,.Bienestar{
+    justify-content: center;
+    background-color: var(--color4);
+    border-radius: 10px;
+    word-wrap: break-word;
+    height: auto;
+    padding:10px;
+}
+.logouvg{
+    padding: 10px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+.uvg article{
+    padding: 10px;
+    margin-top: 10px;
+}
+.uvg i{
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+.logouvg img{
+    width: 100%;
+    height: 100%;
+}
+.logotec{
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+.logotec img{
+    width: 100%;
+    height: 100%;
+}
+.tec article{
+    margin-top: 10px
+}
+.tec i{
+    margin-bottom: 25px;
+}
+.logobien{
+    margin: auto;
+    width: 300px;
+    height: 200px;
+}
+.logobien img{
+    margin-top: 70px;
+    width: 90%;
+    height: 40%;
+}
+.Bienestar article{
+    margin-top: 20px;
+}
+.Bienestar i{
+    margin-top: 45px;
+    margin-bottom: 15px;
 }
 .Proyectos{
     margin: auto;
@@ -429,6 +520,10 @@ left: 40px;
         font-style: 600;
         font-size: 50px;
     }
+    body h3{
+        font-family: 'Montserrat';
+        
+    }
     body p{
         font-family: 'Montserrat';
         font-style: 200;
@@ -455,7 +550,19 @@ left: 40px;
 
     }
     .bxl-linkedin:hover,.bxl-facebook:hover, .bxl-twitter:hover{
-        font-size: 150px;   
+        font-size: 120px;
+    }
+    .bxl-facebook{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .bxl-linkedin{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .Redes{
+        justify-content: center;
+        height: 150px;
     }
     .imagen{
         margin: auto;
@@ -495,6 +602,10 @@ left: 40px;
         margin-right: 100px;
         justify-content: space-between;
     }
+    .design, .javascript, .html, .css{
+        width: 250px;
+        height: 400px;
+    }
     .Estudios{
     display: grid;
     
@@ -524,6 +635,10 @@ left: 40px;
         grid-gap: 10px;
         width: auto;
     }
+    .expBox{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
 .contacto_celtitulo{
     grid-row: 2;
 
@@ -550,6 +665,11 @@ left: 40px;
         font-style: bold;
         font-size: 24px;
     }
+    body h3{
+        font-family: 'Montserrat';
+        
+    }
+    
     body article{
         font-family: 'Montserrat';
         font-size: 20px;
@@ -619,5 +739,6 @@ left: 40px;
     width: 200px;
     height: 200px;
 }
+
 }
 
